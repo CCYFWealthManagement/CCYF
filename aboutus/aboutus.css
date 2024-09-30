@@ -1,0 +1,327 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  body {
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, p {
+    margin-bottom: 10px;
+  }
+  
+  /* Header */
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #a81619;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  /* Navigation bar */
+  .navbar {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .navbar a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    text-align: center;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* About Us Section */
+  .aboutus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 40px auto;
+    margin-top: 5%;
+    padding: 20px;
+  }
+  
+  .aboutus .item {
+    padding: 20px;
+  }
+  
+  .item-c {
+    padding-right: 20px;
+  }
+  
+  .item-a {
+    border-left: 5px solid #a81619;
+    padding-left: 20px;
+  }
+  
+  .item-c h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  
+  .item-a .subtitle, .item-c .subtitle {
+    font-size: 1.2em;
+    color: #7f8c8d;
+    margin-top: 20px;
+  }
+  
+  .item-b img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .item-d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 5px solid #a81619;
+  }
+  
+  .item-d img {
+    max-width: 80%;
+    border-radius: 10px;
+  }
+  
+  .responsive-img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .aboutus2 {
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto; /* Center the container */
+    padding: 20px; /* Add some padding */
+  }
+  
+  .aboutus2 h2 {
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 2em; /* Size of the heading */
+    color: #333; /* Color of the heading */
+  }
+  
+  .photo-gallery {
+    display: grid; /* Use grid layout for images */
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between images */
+    margin-top: 20px;
+    margin-bottom: 40PX;
+  }
+  
+  .photo-card {
+    position: relative;
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Clip the image within the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  }
+  
+  .photo-card img {
+    width: 100%; /* Full width of the card */
+    height: 100%; /* Full height of the card */
+    border-radius: 15px; /* Rounded corners */
+    object-fit: cover; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth scale effect */
+  }
+  
+  .photo-card:hover {
+    transform: scale(1.05); /* Scale up the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+  }
+  
+  .photo-card img:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+  }
+  
+  
+  
+  
+  
+  
+  
+  /* Menu Button */
+  .menu-button {
+    display: none;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
+  /* Flexbox Layout */
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .box {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .box h2 {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .box p, .box a {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Social Icons */
+  .social-icon i {
+    font-size: 2.0em;
+    color: #555;
+    margin: 10px 10px;
+    transition: color 0.3s;
+  }
+  
+  .social-icon:hover i, .social-icon:active {
+    color: #a81619;
+  }
+  
+  /* Link Underline Animation */
+  .underline-link {
+    text-decoration: none;
+    position: relative;
+    color: #555;
+    transition: color 0.3s;
+  }
+  
+  .underline-link:hover, .underline-link.active {
+    color: #a81619;
+  }
+  
+  .underline-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #a81619;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .underline-link:hover::after, .underline-link.active::after {
+    width: 100%;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .aboutus {
+      grid-template-columns: 1fr;
+    }
+  
+    .navbar {
+      display: none;
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.8);
+      position: absolute;
+      top: 60px;
+      width: 100%;
+      z-index: 1000;
+    }
+  
+    .navbar a {
+      padding: 15px;
+      font-size: 18px;
+      border-bottom: 1px solid #fff;
+    }
+  
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+  
+    .menu-button {
+      display: block;
+    }
+  
+    .container {
+      flex-direction: column;
+    }
+  
+    .box {
+      border-right: none;
+      border-bottom: 1px solid #ccc;
+    }
+  
+    .box:last-child {
+      border-bottom: none;
+    }
+  
+    .item-d img {
+      max-width: 100%;
+    }
+  
+    .photo-card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .photo-gallery {
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      padding: 10px;
+      font-size: 1rem;
+    }
+  
+    .header {
+      height: 50px;
+    }
+  
+    .header a {
+      font-size: 16px;
+    }
+  }
+  
+  /* For larger screens, display the navbar as normal */
+  @media screen and (min-width: 768px) {
+    .navbar {
+      display: flex !important;
+    }
+  
+    .navbar a {
+      flex: 1;
+      text-align: center;
+    }
+  }

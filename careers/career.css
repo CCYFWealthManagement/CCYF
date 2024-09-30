@@ -1,0 +1,407 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #a81619; 
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Navigation bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: transparent; 
+    padding: 10px;
+    width: 100%;
+}
+
+.navbar a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Menu Button */
+.menu-button {
+    display: none;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.career-section {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap; 
+    margin: 80px auto;
+    padding: 0; 
+    max-width: 1200px; /* Adjusted max-width */
+    width: 90%; /* Added width for responsiveness */
+    background-color: #fff;
+}
+
+.career-image img {
+    width: 100%;
+    max-width: 600px; 
+    height: auto; 
+    border-radius: 10px;
+}
+
+.career-text {
+    flex: 1; 
+    margin-left: 20px; 
+}
+
+.career-text h1 {
+    font-size: 2rem; 
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.career-text p {
+    font-size: 1rem; 
+    line-height: 1.6;
+    color: #333;
+}
+
+.career-info {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px; /* Adjusted max-width */
+    width: 90%; /* Added width for responsiveness */
+}
+
+.career-info img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.career-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 40px; 
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.career-details {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    gap: 50px; 
+}
+
+.requirements, .benefits, .categories {
+    flex: 1; 
+    text-align: left;
+    margin-bottom: 40px; 
+}
+
+.requirements ul, .benefits ul, .categories ul {
+    list-style-type: disc;
+    padding-left: 10px;
+    color: #333;
+    font-size: 20px; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+.requirements h3, .benefits h3, .categories h3 {
+    font-size: 26px; 
+    color: #000;
+    margin-bottom: 20px; 
+}
+
+.requirements li, .benefits li, .categories li {
+    margin-bottom: 10px; 
+}
+
+.application-form {
+    text-align: center; /* Center text in the application form */
+}
+.apply-container {
+    display: flex; /* Use Flexbox to position items in a row */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    margin-top: 10px; /* Space above the row */
+}
+
+.apply-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #a81619, #821113); /* Gradient background */
+    color: white;
+    text-decoration: none;
+    border-radius: 25px; /* More rounded corners */
+    margin-left: 10px; /* Space between text and button */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Added transform and shadow */
+    font-weight: bold; /* Bold text */
+    font-size: 16px; /* Slightly larger font size */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+.apply-button:hover {
+    background: linear-gradient(45deg, #a81619, #821113); /* Darker gradient on hover */
+    transform: translateY(-3px); /* Slight lift effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+}
+
+.apply-button:active {
+    transform: translateY(1px); /* Pressed effect */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Normal shadow on active */
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .box {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .box h2 {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.box p, .box a {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+  
+.social-icon i {
+    font-size: 2.0em; 
+    color: #555;
+    margin: 10px 10px;
+    transition: color 0.3s;
+}
+
+.social-icon:hover i, .social-icon:active {
+    color: #a81619;
+}
+
+  /* Line */
+  .spaced-lines {
+    line-height: 2; 
+  }
+
+  .underline-link {
+    text-decoration: none;
+    position: relative;
+    color: #555; /* Default link color */
+    transition: color 0.3s;
+}
+
+.underline-link:hover, .underline-link.active {
+    color: #a81619; /* Change color when hovered or clicked */
+}
+
+.underline-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #a81619; /* Underline color */
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.underline-link:hover::after, .underline-link.active::after {
+    width: 100%;
+}
+
+
+
+
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .company-content h1 {
+        font-size: 4vw;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8); /* Adjust background color */
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .navbar a {
+        padding: 15px;
+        font-size: 18px;
+        border-bottom: 1px solid #fff;
+    }
+
+    .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .career-section {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 20px;
+    }
+
+    .career-image img {
+        max-width: 100%; 
+        margin-bottom: 20px;
+    }
+
+    .career-text {
+        margin-left: 0;
+    }
+
+    .career-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .career-text p {
+        font-size: 1.5rem; 
+    }
+
+    .career-info {
+        padding: 0 15px; 
+    }
+    .career-info p {
+        font-size: 64px; 
+        line-height: 1.6; 
+        padding: 10px 20px; 
+        margin-bottom: 50px;
+        max-width: 600px; 
+        text-align: center; 
+    }
+    
+    .career-details {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 30px; 
+        text-align: center;
+    }
+
+    .requirements, .benefits, .categories {
+        text-align: center; 
+        margin-bottom: 40px; 
+        max-width: 100%; 
+    }
+
+    .requirements ul, .benefits ul, .categories ul {
+        padding-left: 0;
+        text-align: left; 
+    }
+
+    .requirements li, .benefits li, .categories li {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .requirements h3, .benefits h3, .categories h3 {
+        font-size: 24px; 
+        margin-bottom: 15px; 
+    }
+
+    .career-info p {
+        font-size: 16px; 
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+
+    .career-info img {
+        max-width: 100%; 
+        margin-bottom: 20px;
+        border-radius: 5px; 
+    }
+    
+    
+    .container {
+        flex-direction: column;
+      }
+    
+      .box {
+        border-right: none; 
+        border-bottom: 1px solid #ccc; 
+      }
+    
+      .box:last-child {
+        border-bottom: none; 
+      }
+    
+    
+}
+
+/* Very small screen adjustments */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+}
+
+/* For larger screens, display the navbar as normal */
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex !important;
+    }
+
+    .navbar a {
+        flex: 1;
+        text-align: center;
+    }
+}
