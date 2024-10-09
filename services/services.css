@@ -225,8 +225,10 @@ h1 {
     }
 
     .service-box {
-        flex: 0 1 calc(70% - 40px); /* Two columns on smaller screens */
-    }
+        max-width: 300px;
+        height: auto; /* Equal height for all boxes */
+        margin: 15px;
+        }
 
     .container {
         flex-direction: column;
@@ -253,7 +255,9 @@ h1 {
     }
 
     .service-box {
-        flex: 0 1 100%; /* Stacks boxes in a single column on very small screens */
+        max-width: 250px;
+        height: auto; /* Equal height for all boxes */
+        margin: 15px;
     }
 }
 
