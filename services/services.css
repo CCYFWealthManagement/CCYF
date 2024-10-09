@@ -225,7 +225,7 @@ h1 {
     }
 
     .service-box {
-        flex: 0 1 calc(50% - 40px); /* Two columns on smaller screens */
+        flex: 0 1 calc(70% - 40px); /* Two columns on smaller screens */
     }
 
     .container {
