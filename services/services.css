@@ -225,7 +225,7 @@ h1 {
     }
 
     .service-box {
-        max-width: 300px;
+        max-width: 250px;
         height: auto;
         }
 
@@ -254,7 +254,7 @@ h1 {
     }
 
     .service-box {
-        max-width: 300px;
+        max-width: 200px;
         height: auto;
     }
 }
