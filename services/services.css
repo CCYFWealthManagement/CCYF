@@ -225,7 +225,7 @@ h1 {
     }
 
     .service-box {
-        max-width: 250px;
+        max-width: 300px;
         height: auto;
         }
 
@@ -253,10 +253,6 @@ h1 {
         font-size: 1rem;
     }
 
-    .service-box {
-        max-width: 200px;
-        height: auto;
-    }
 }
 
 /* For larger screens, display the navbar as normal */
