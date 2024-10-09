@@ -15,7 +15,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
@@ -24,7 +23,7 @@ body {
 .navbar {
     display: flex;
     justify-content: center;
-    background-color: transparent; /* No background color */
+    background-color: transparent;
     padding: 10px;
     width: 100%;
 }
@@ -56,215 +55,116 @@ body {
     cursor: pointer;
 }
 
-
+/* Services Section */
 .services {
+    margin-top: 100px;
     text-align: center;
-    padding: 50px 20px;
+    padding: 20px;
+    background-color: #fff;
 }
 
-h1 {
+.services h1 {
     margin-bottom: 40px;
-    font-size: 36px;
-    color: #333;
-    width: 100%;
-    text-align: center;
-}
-
-/* Container for service boxes */
-.services {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centers the service boxes horizontally */
 }
 
 .service-box {
     background-color: #fff;
-    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    flex: 1 1 300px; /* Each box takes up 300px of space */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 300px;
-    height: 300px; /* Equal height for all boxes */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     margin: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    flex: 0 1 calc(33.33% - 40px); /* Three columns layout */
 }
 
 .service-box:hover {
-    transform: scale(1.05);
-    background-color: #f9f9f9;
+    transform: translateY(-10px);
 }
 
 .service-icon {
     font-size: 50px;
-    margin-bottom: 20px;
     color: #a81619;
+    margin-bottom: 20px;
 }
 
 .service-title {
     font-size: 24px;
-    margin-bottom: 15px;
     font-weight: bold;
-    color: #333;
+    margin-bottom: 15px;
 }
 
 .service-description {
     font-size: 16px;
     color: #666;
-    flex-grow: 1;
 }
 
-.services {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Adds gap between rows and columns */
-}
-
-.service-box {
-    flex: 0 1 calc(33.33% - 40px); /* Creates three columns with space in between */
-    margin: 10px;
-}
-
+/* Footer section */
 .container {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     padding: 20px;
-  }
-  
-  .box {
-    flex: 1;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .box h2 {
-    margin-bottom: 30px;
-    font-size: 1.5rem;
-    color: #333;
+    background-color: #a81619;
+    color: white;
+    flex-direction: row;
 }
 
-.box p, .box a {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 20px;
+.box {
+    width: 30%;
 }
-  
-.social-icon i {
-    font-size: 2.0em; /* Increase this value to make the icons bigger */
-    color: #555;
-    margin: 10px 10px;
+
+.box iframe {
+    border-radius: 10px;
+    border: 0;
+}
+
+.social-icon {
+    color: white;
+    font-size: 24px;
+    margin-right: 10px;
     transition: color 0.3s;
 }
 
-.social-icon:hover i, .social-icon:active {
-    color: #a81619;
+.social-icon:hover {
+    color: #ddd;
 }
 
-
-  /* Line */
-  .spaced-lines {
-    line-height: 2; 
-  }
-
-  
-  .underline-link {
-    text-decoration: none;
-    position: relative;
-    color: #555; /* Default link color */
-    transition: color 0.3s;
-}
-
-.underline-link:hover, .underline-link.active {
-    color: #a81619; /* Change color when hovered or clicked */
-}
-
-.underline-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: #a81619; /* Underline color */
-    bottom: 0;
-    left: 0;
-    transition: width 0.3s ease-in-out;
-}
-
-.underline-link:hover::after, .underline-link.active::after {
-    width: 100%;
-}
-
+/* Media Queries */
 @media screen and (max-width: 768px) {
+    .service-box {
+        flex: 0 1 calc(50% - 40px); /* Two columns layout */
+    }
 
     .navbar {
-        display: none;
         flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.8); /* Adjust background color */
-        position: absolute;
-        top: 60px;
-        width: 100%;
-        z-index: 1000;
-    }
-
-    .navbar a {
-        padding: 15px;
-        font-size: 18px;
-        border-bottom: 1px solid #fff;
-    }
-
-    .navbar a:hover {
-        background-color: #ddd;
-        color: black;
     }
 
     .menu-button {
         display: block;
     }
-
-    .service-box {
-        flex: 0 1 calc(50% - 40px); /* Two columns on smaller screens */
+    
+    .navbar {
+        display: none;
+        flex-direction: column;
     }
 
     .container {
         flex-direction: column;
-      }
-    
-      .box {
-        border-right: none; 
-        border-bottom: 1px solid #ccc; 
-      }
-    
-      .box:last-child {
-        border-bottom: none; 
-      }
-
-    
-    
+    }
 }
 
-/* Very small screen adjustments */
 @media screen and (max-width: 400px) {
-    .navbar a {
-        padding: 10px;
-        font-size: 1rem;
-    }
-
     .service-box {
-        flex: 0 1 100%; /* Stacks boxes in a single column on very small screens */
+        flex: 0 1 100%; /* Stacks boxes vertically */
     }
-}
 
-/* For larger screens, display the navbar as normal */
-@media screen and (min-width: 768px) {
     .navbar {
-        display: flex !important;
+        display: none;
+        flex-direction: column;
     }
 
     .navbar a {
-        flex: 1;
-        text-align: center;
+        padding: 10px 5px;
+        font-size: 16px;
     }
 }
