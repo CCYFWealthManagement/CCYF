@@ -224,10 +224,6 @@ h1 {
         display: block;
     }
 
-    .service-box {
-        max-width: 300px;
-        height: auto;
-        }
 
     .container {
         flex-direction: column;
