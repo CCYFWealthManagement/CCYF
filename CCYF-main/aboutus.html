@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CCYF Wealth Management - About Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="5NVBfSbbo56RUzybGjk6BuLlr4FIg57AR2rIhWZ5QNE" />
+    <meta name="description" content="Learn about CCYF Wealth Management, a trusted financial advisor offering life planning, insurance, and investment services.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aboutus.css">
+    <link rel="icon" type="image/png" sizes="64x64" href="../ccyf_logo.jpg">
+</head>
+<body>
+    <header class="header">
+        <!-- Menu Button (Hamburger) -->
+        <button class="menu-button" id="menuButton" aria-label="Toggle navigation menu">☰</button>
+
+        <!-- Navbar -->
+        <nav class="navbar" id="navbar">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="aboutus.html" aria-current="page"><i class="fas fa-info-circle"></i> About Us</a>
+            <a href="services.html"><i class="fas fa-concierge-bell"></i> Services</a>
+            <a href="career.html"><i class="fas fa-briefcase"></i> Career</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="aboutus-section">
+            <h1><i class="fas fa-users"></i> About Us</h1>
+
+            <div class="aboutus-grid">
+                <div class="aboutus-item item-a">
+                    <div class="feature-icon"><i class="fas fa-handshake"></i></div>
+                    <h2><i class="fas fa-check-circle"></i> Trusted Agent of:</h2>
+                    <ul class="service-list">
+                        <li><i class="fas fa-heartbeat"></i> Life Planning</li>
+                        <li><i class="fas fa-shield-alt"></i> General Insurance</li>
+                        <li><i class="fas fa-chart-line"></i> Unit Trust</li>
+                        <li><i class="fas fa-file-contract"></i> Wills</li>
+                        <li><i class="fas fa-user-tie"></i> Trustees</li>
+                        <li><i class="fas fa-mosque"></i> Takaful</li>
+                        <li><i class="fas fa-home"></i> Housing Loans</li>
+                        <li><i class="fas fa-credit-card"></i> Credit Card</li>
+                    </ul>
+                </div>
+                <div class="aboutus-item item-b">
+                    <img src="CCYF_LOGO.jpg" alt="CCYF Wealth Management Logo" class="responsive-img">
+                </div>
+                <div class="aboutus-item item-c">
+                    <div class="feature-icon"><i class="fas fa-award"></i></div>
+                    <h2>庄千燕凤 CHENG CHIAN YAN FONG</h2>
+                    <h3><i class="fas fa-user-tie"></i> Insurance Advisor of CCYF Wealth Management</h3>
+                    <ul class="achievement-list">
+                        <li><i class="fas fa-trophy"></i> National Top Producer</li>
+                        <li><i class="fas fa-medal"></i> GEL Supermacy Award</li>
+                        <li><i class="fas fa-trophy"></i> National Top Producer</li>
+                        <li><i class="fas fa-user-friends"></i> Unit Sales Manager</li>
+                        <li><i class="fas fa-star"></i> Life Times Producer</li>
+                        <li><i class="fas fa-chart-line"></i> Life Time Planner</li>
+                        <li><i class="fas fa-certificate"></i> MDRT QUALIFIER</li>
+                    </ul>
+                </div>
+                <div class="aboutus-item item-d">
+                    <img src="aboutus/CCYF.png" alt="Cheng Chian Yan Fong - Insurance Advisor" class="responsive-img">
+                </div>
+            </div>
+        </section>
+
+        <section class="achievements-section">
+            <h2><i class="fas fa-trophy"></i> CCYF's Achievement</h2>
+            <!-- Image Gallery -->
+            <div id="gallery" class="photo-gallery">
+                <div class="photo-card">
+                    <img src="aboutus/CCYF1.jpg" alt="CCYF Achievement 1" loading="lazy">
+                </div>
+                <div class="photo-card">
+                    <img src="aboutus/CCYF2.jpg" alt="CCYF Achievement 2" loading="lazy">
+                </div>
+                <div class="photo-card">
+                    <img src="aboutus/CCYF3.jpg" alt="CCYF Achievement 3" loading="lazy">
+                </div>
+                <div class="photo-card">
+                    <img src="aboutus/CCYF4.jpg" alt="CCYF Achievement 4" loading="lazy">
+                </div>
+                <div class="photo-card">
+                    <img src="aboutus/CCYF5.jpg" alt="CCYF Achievement 5" loading="lazy">
+                </div>
+                <div class="photo-card">
+                    <img src="aboutus/CCYF6.jpg" alt="CCYF Achievement 6" loading="lazy">
+                </div>
+                <div class="photo-card">
+                    <img src="aboutus/CCYF7.jpg" alt="CCYF Achievement 7" loading="lazy">
+                </div>
+                <div class="photo-card">
+                    <img src="aboutus/CCYF8.jpg" alt="CCYF Achievement 8" loading="lazy">
+                </div>
+            </div>
+        </section>
+        
+        <!-- 模态框用于图片展示 -->
+        <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <span class="prev">&#10094;</span>
+            <span class="next">&#10095;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="box">
+                <h2><i class="fas fa-building"></i> CCYF WEALTH MANAGEMENT</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.3915332649226!2d103.79095327447169!3d1.5323345609631556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da6dab8046e945%3A0x2d5a9bfe0e3a1049!2sYMT%20Development%20Resources!5e0!3m2!1sen!2smy!4v1723793896548!5m2!1sen!2smy" 
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="CCYF Wealth Management Location">
+                </iframe>
+            </div>
+            
+            <div class="box">
+                <h2><i class="fas fa-info-circle"></i> About</h2>
+                <p class="spaced-lines"><a href="aboutus.html" class="underline-link"><i class="fas fa-user-friends"></i> Who We Are?</a></p>
+                <p class="spaced-lines"><a href="services.html" class="underline-link"><i class="fas fa-hands-helping"></i> What Can We Help You?</a></p>
+                <p class="spaced-lines"><a href="career.html" class="underline-link"><i class="fas fa-user-plus"></i> Would you like to join us?</a></p>
+            </div>
+            
+            <div class="box">
+                <h2><i class="fas fa-address-book"></i> Contact</h2>
+                <div class="contact-icons">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <span>Tel: +607-355 5622</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-fax"></i>
+                        </div>
+                        <span>Fax: +607-351 1618</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <span>Email: ccfywealthmanagement@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <span>40-01 & 40-02, Jalan Ros Merah 2/7, Taman Johor Jaya, 81100 Johor Bahru, Johor</span>
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/ccyf.wealth.management/" target="_blank" class="social-icon" aria-label="Visit our Facebook page">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/ccyfwealthmanagement/" target="_blank" class="social-icon" aria-label="Visit our Instagram page">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/+60127927005" target="_blank" class="social-icon" aria-label="Contact us on WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+                <div id="google_translate_element"></div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <i class="far fa-copyright"></i> 2025 CCYF Wealth Management. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // 导航菜单功能
+        function toggleMenu() {
+            const navbar = document.getElementById("navbar");
+            const menuButton = document.getElementById("menuButton");
+            
+            if (navbar.classList.contains("show")) {
+                navbar.classList.remove("show");
+                menuButton.setAttribute("aria-expanded", "false");
+            } else {
+                navbar.classList.add("show");
+                menuButton.setAttribute("aria-expanded", "true");
+            }
+        }
+
+        // 添加事件监听器到菜单按钮
+        document.getElementById("menuButton").addEventListener("click", toggleMenu);
+
+        // 在移动设备上点击外部关闭菜单
+        document.addEventListener("click", function(event) {
+            const navbar = document.getElementById("navbar");
+            const menuButton = document.getElementById("menuButton");
+            
+            if (window.innerWidth <= 768 && 
+                !navbar.contains(event.target) && 
+                !menuButton.contains(event.target) && 
+                navbar.classList.contains("show")) {
+                toggleMenu();
+            }
+        });
+
+        // 按ESC键关闭菜单
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "Escape") {
+                const navbar = document.getElementById("navbar");
+                if (navbar.classList.contains("show")) {
+                    toggleMenu();
+                }
+            }
+        });
+
+        // 处理窗口大小调整
+        window.addEventListener('resize', function() {
+            const navbar = document.getElementById("navbar");
+            const menuButton = document.getElementById("menuButton");
+            
+            if (window.innerWidth > 768) {
+                navbar.classList.remove("show");
+                menuButton.setAttribute("aria-expanded", "false");
+            }
+        });
+
+        // 图片画廊模态框功能
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+        const closeBtn = document.querySelector(".close");
+        const prevBtn = document.querySelector(".prev");
+        const nextBtn = document.querySelector(".next");
+        const galleryImages = document.querySelectorAll(".photo-card img");
+        let currentIndex = 0;
+
+        // 打开模态框并显示图片
+        function openModal(index) {
+            modal.style.display = "flex";
+            modalImg.src = galleryImages[index].src;
+            currentIndex = index;
+        }
+
+        // 关闭模态框
+        function closeModal() {
+            modal.style.display = "none";
+        }
+
+        // 显示下一张图片
+        function showNextImage() {
+            currentIndex = (currentIndex + 1) % galleryImages.length;
+            modalImg.src = galleryImages[currentIndex].src;
+        }
+
+        // 显示上一张图片
+        function showPrevImage() {
+            currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+            modalImg.src = galleryImages[currentIndex].src;
+        }
+
+        // 为每个图片添加点击事件
+        galleryImages.forEach((img, index) => {
+            img.addEventListener("click", () => openModal(index));
+        });
+
+        // 模态框控制
+        closeBtn.addEventListener("click", closeModal);
+        nextBtn.addEventListener("click", showNextImage);
+        prevBtn.addEventListener("click", showPrevImage);
+
+        // 点击模态框背景关闭
+        modal.addEventListener("click", function(event) {
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+
+        // 键盘导航
+        document.addEventListener("keydown", function(event) {
+            if (modal.style.display === "flex") {
+                if (event.key === "ArrowRight") {
+                    showNextImage();
+                } else if (event.key === "ArrowLeft") {
+                    showPrevImage();
+                } else if (event.key === "Escape") {
+                    closeModal();
+                }
+            }
+        });
+
+        // 下划线链接效果
+        const underlineLinks = document.querySelectorAll('.underline-link');
+
+        underlineLinks.forEach(link => {
+            link.addEventListener('mouseenter', function() {
+                link.classList.add('active');
+            });
+            
+            link.addEventListener('mouseleave', function() {
+                link.classList.remove('active');
+            });
+
+            link.addEventListener('click', function() {
+                underlineLinks.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+            });
+        });
+
+        // 页面加载动画
+        document.addEventListener('DOMContentLoaded', function() {
+            const aboutusItems = document.querySelectorAll('.aboutus-item');
+            aboutusItems.forEach((item, index) => {
+                setTimeout(() => {
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateY(0)';
+                }, index * 150);
+            });
+            
+            // 设置初始样式用于动画
+            aboutusItems.forEach(item => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(20px)';
+                item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

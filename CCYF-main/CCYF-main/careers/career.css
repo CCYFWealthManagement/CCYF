@@ -1,0 +1,352 @@
+
+        /* CSS Variables */
+        :root {
+            --primary-color: #a81619;
+            --secondary-color: #333;
+            --accent-color: #d4af37;
+            --text-color: #333;
+            --light-text: #666;
+            --background-color: #f9f9f9;
+            --white: #ffffff;
+            --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        /* Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Header & Navigation */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: var(--primary-color);
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: transparent;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .navbar a {
+            color: var(--white);
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: var(--transition);
+            text-align: center;
+            flex: 1;
+        }
+
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .menu-button {
+            display: none;
+            font-size: 24px;
+            background-color: transparent;
+            border: none;
+            color: var(--white);
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        /* Career Section */
+        .career-section {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 80px auto 40px;
+            padding: 20px;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .career-image {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .career-text {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+        }
+
+        .career-text h1 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 2.2rem;
+        }
+
+        .career-text p {
+            margin-bottom: 15px;
+            color: var(--light-text);
+            font-size: 1.1rem;
+        }
+
+        /* Career Info Section */
+        .career-info {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .career-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .categories, .requirements, .benefits {
+            background-color: var(--white);
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .categories:hover, .requirements:hover, .benefits:hover {
+            transform: translateY(-5px);
+        }
+
+        .categories h3, .requirements h3, .benefits h3 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+        }
+
+        .categories ul, .requirements ul, .benefits ul {
+            list-style-type: none;
+        }
+
+        .categories li, .requirements li, .benefits li {
+            padding: 8px 0;
+            color: var(--light-text);
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .categories li:before, .requirements li:before, .benefits li:before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Application Form */
+        .application-form {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 40px;
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .application-form h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .application-form p {
+            margin-bottom: 30px;
+            color: var(--light-text);
+            font-size: 1.1rem;
+        }
+
+        .apply-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: var(--transition);
+        }
+
+        .apply-button:hover {
+            background-color: #8a1215;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 40px 20px;
+            background-color: var(--white);
+            border-top: 1px solid #eee;
+        }
+
+        .box {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .box h2 {
+            margin-bottom: 30px;
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+        }
+
+        .box p, .box a {
+            font-size: 1rem;
+            color: var(--light-text);
+            margin-bottom: 20px;
+        }
+
+        .social-icon i {
+            font-size: 2.0em;
+            color: var(--light-text);
+            margin: 10px 10px;
+            transition: var(--transition);
+        }
+
+        .social-icon:hover i {
+            color: var(--primary-color);
+        }
+
+        .spaced-lines {
+            line-height: 2;
+        }
+
+        .underline-link {
+            text-decoration: none;
+            position: relative;
+            color: var(--light-text);
+            transition: var(--transition);
+            display: inline-block;
+        }
+
+        .underline-link:hover, .underline-link.active {
+            color: var(--primary-color);
+        }
+
+        .underline-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-color);
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease-in-out;
+        }
+
+        .underline-link:hover::after, .underline-link.active::after {
+            width: 100%;
+        }
+
+        hr {
+            border: 1px solid #ccc;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .menu-button {
+                display: block;
+            }
+
+            .navbar {
+                display: none;
+                flex-direction: column;
+                background-color: var(--primary-color);
+                position: absolute;
+                top: 60px;
+                width: 100%;
+                z-index: 1000;
+                padding: 0;
+            }
+
+            .navbar a {
+                padding: 15px;
+                font-size: 18px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                flex: none;
+            }
+
+            .navbar.show {
+                display: flex;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+            .container > hr {
+                display: none;
+            }
+
+            .box {
+                border-right: none;
+                border-bottom: 1px solid #ccc;
+                padding: 30px 20px;
+            }
+
+            .box:last-child {
+                border-bottom: none;
+            }
+
+            .application-form {
+                padding: 30px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .career-section, .career-info, .application-form {
+                padding: 10px;
+            }
+
+            .career-text h1 {
+                font-size: 1.8rem;
+            }
+
+            .categories, .requirements, .benefits {
+                padding: 20px;
+            }
+        }
