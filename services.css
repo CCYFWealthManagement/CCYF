@@ -309,9 +309,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #c62828;
+    color: var(--primary-color);
     font-size: 1rem;
     transition: all 0.3s ease;
+    flex-shrink: 0; 
 }
 
 .contact-item:hover .contact-icon {
